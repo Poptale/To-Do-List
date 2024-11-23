@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+}
+body{
+    background-color: #000322;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.stats-container{
+    border: 2px solid #828dff;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    width: 450px;
+    justify-content: space-between;
+}
+.stats-description{
+    width: 320px;
+}
+.stats-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #828dff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.progressBar-container{
+    background-color: #171c48;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.progressBar{
+    width: 0%;
+    background-color: #828dff;
+    height: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+input{
+    height: 45px;
+    width: 470px;
+    background-color: #171c48;
+    border-radius: 10px;
+    border: 2px solid #828dff;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    background-color: #828dff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+svg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.taskItems{
+    height: 50px;
+    width: 510px;
+    background-color: #171c48;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+}
+.ctype{
+    height: 13px;
+    width: 13px;
+    border: none;
+    cursor: pointer;
+}
+.taskText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.taskss{
+    padding-left: 10px;
+}
+
+ul{
+    margin-top: 10px;
+}
+ul li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.ss{
+    text-decoration: line-through;
+    color: aqua;
+}
