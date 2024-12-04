@@ -5,20 +5,24 @@
     font-weight: 500;
 }
 body{
-    background-color: #000322;
+    background-color: #000214;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 120px;
+    padding-top: 20px;
+    overflow: hidden;
 }
 .stats-container{
     border: 2px solid #828dff;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 40px;
     display: flex;
     gap: 20px;
@@ -40,7 +44,7 @@ body{
     font-weight: bolder;
 }
 .progressBar-container{
-    background-color: #171c48;
+    background-color: #1a2052;
     height: 10px;
     border-radius: 10px;
     margin-top: 30px;
@@ -62,7 +66,7 @@ form{
 }
 input{
     height: 45px;
-    width: 470px;
+    width: 500px;
     background-color: #171c48;
     border-radius: 10px;
     border: 2px solid #828dff;
@@ -71,10 +75,13 @@ input{
     font-size: 16px;
     color: white;
 }
+.haha{
+    position: relative;
+}
 button{
     height: 50px;
     width: 50px;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 30px;
     background-color: #828dff;
     color: #ffffff;
@@ -89,7 +96,7 @@ svg{
 }
 .taskItems{
     height: 50px;
-    width: 510px;
+    width: 480px;
     background-color: #171c48;
     display: flex;
     align-items: center;
@@ -97,9 +104,13 @@ svg{
     padding: 0 0 0 10px;
     border-radius: 5px;
 }
+input::placeholder{
+    color: #e1e1e1;
+    opacity: 0.9;
+}
 .ctype{
-    height: 13px;
-    width: 13px;
+    height: 15px;
+    width: 15px;
     border: none;
     cursor: pointer;
 }
@@ -121,5 +132,32 @@ ul li{
 }
 .ss{
     text-decoration: line-through;
-    color: aqua;
+    color: #828dff;
+}
+.cover{
+    border: 2px solid #828dff;
+    height: 80vh;
+    width: 80vh;
+    border-radius: 20px;
+    overflow: auto;
+    background-color: #000322;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+}
+.addList{
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    scale: 0.8;
+}
+.p{
+    display: inline;
+    padding-top: 40px;
+    opacity: 0.8;
+    color: #e1e1e1;
+}
+img{
+    height: 150px;
+    width: 150px;
+    opacity: 0.9;
 }

@@ -9,8 +9,13 @@ function addTask() {
     if (text){
         tasks.push({text: text, completed: false});
         input.value = "";
+        if(tasks.length >= 1){
+            document.querySelector(".p").style.display = "none";
+            document.querySelector("img").style.display = "none";
+
+        }; 
         updateTask();
-        updatestats()
+        updatestats();
     };
 };
 function updateTask(){
@@ -39,6 +44,11 @@ function toggleTask(index) {
 }
 function deleteTask(index){
     tasks.splice(index, 1);
+    if(tasks.length < 1){
+        document.querySelector(".p").style.display = "inline";
+        document.querySelector("img").style.display = "inline";
+
+    };
     updateTask();
     updatestats();
 };
