@@ -1,3 +1,4 @@
+let complete = new Audio("complete.mp4");
 let tasks = [];
 document.querySelector(".addList").addEventListener("click", (e)=>{
     e.preventDefault();
@@ -26,7 +27,7 @@ function updateTask(){
         createLi.innerHTML =
         `<div class="taskItems">
          <div class="taskText ${task.completed ? 'completed' : ''}">
-             <input class="ctype" type="checkbox" ${task.completed ? 'checked' : ''} onclick="toggleTask(${index})">
+             <input class="ctype" type="checkbox" ${task.completed ? 'checked' : ''} onclick="toggleTask(${index}); complete.currentTime = 0; complete.play();">
              <p class="taskss ${task.completed ? 'ss' : ''}"> ${task.text}</p>
          </div>
          <div class="icons">
@@ -42,6 +43,7 @@ function toggleTask(index) {
     updateTask();
     updatestats();
 }
+
 function deleteTask(index){
     tasks.splice(index, 1);
     if(tasks.length < 1){
